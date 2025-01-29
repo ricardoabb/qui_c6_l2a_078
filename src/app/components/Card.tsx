@@ -36,17 +36,12 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
             bgColor: bgColor,
 
         })}>
-            <div className='flex flex-col justify-center items-start ml-[82px] md:ml-[182px] lg:ml-[200px]'>
+            <div className='flex flex-col justify-center items-start w-full ml-[82px] sm:ml-[140px] md:ml-[182px] lg:ml-[200px]'>
                 <h1 className="font-handlee w-8/12 text-xl md:text-2xl lg:text-5xl text-[#ba7bd3]">{title}</h1>
                 <p className='w-9/12 text-pink-950  '>{subtitle}</p>
             </div>
 
-{/* 
-            <div className="absolute right-[30px] bottom-[-28px] bg-white flex justify-center items-center rounded-[50%] w-[60px] h-[60px] shadow-md ">
-                <svg className="transition-all ease-out group-hover:rotate-180 " width="20" height="24" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 2.31818C17 1.21361 16.1046 0.318176 15 0.318176C13.8954 0.318176 13 1.21361 13 2.31818V26.529L4.3233 17.8523C3.54225 17.0712 2.27592 17.0712 1.49487 17.8523C0.713826 18.6333 0.713826 19.8997 1.49487 20.6807L13.9207 33.1065C14.7017 33.8876 15.9681 33.8876 16.7491 33.1065L29.1749 20.6807C29.956 19.8997 29.956 18.6333 29.1749 17.8523C28.3939 17.0712 27.1276 17.0712 26.3465 17.8523L17 27.1988V2.31818Z" fill="#410F33" />
-                </svg>
-            </div> */}
+
 
 
             <svg className={`absolute top-[-60px] right-[-20px] lg:top-[-50px] lg:right-[-30px] w-20 lg:w-32 ${tapeColor} `}
