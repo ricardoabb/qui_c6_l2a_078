@@ -31,7 +31,7 @@ export default function Home() {
         <h1 className="font-bold text-2xl  md:text-5xl text-[#ba7bd3] text-center">Onde usamos catalisadores?</h1>
         <p className="text-pink-950">Clique nos boxes para saber mais!</p>
 
-        <div className="absolute right-[30px] bottom-[-28px] bg-[#ba7bd3] flex justify-center items-center rounded-[50%] w-[70px] h-[70px] animate-pulse cursor-pointer animate-bounce"
+        <div className="absolute right-0 sm:right-[30px] bottom-[-48px] sm:bottom-[-28px] bg-[#ba7bd3] flex justify-center items-center rounded-[50%] w-[70px] h-[70px] animate-pulse cursor-pointer animate-bounce"
           onClick={() => handleClick("cards")}
         >
           <svg className="rotate-180 fill-[#fff] " xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path fill="#fff" d="M19.221 10.803L12 10V4a2 2 0 0 0-4 0v12l-3.031-1.212a2 2 0 0 0-2.64 1.225l-.113.34a1 1 0 0 0 .309 1.084l5.197 4.332c.179.149.406.231.64.231H19a2 2 0 0 0 2-2v-7.21a2 2 0 0 0-1.779-1.987" /></svg>
