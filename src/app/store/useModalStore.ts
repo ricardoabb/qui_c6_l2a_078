@@ -9,6 +9,7 @@ interface ModalState {
   content: string;  
   image1?: string;
   image2?: string;
+  image3?: string;
   video?: string;
   tapeColor?: string;
   bgColor?: string;
@@ -20,6 +21,7 @@ interface ModalState {
       content: string;      
       image1?: string;
       image2?: string;
+      image3?: string;
       video?: string;
       tapeColor?: string;
       bgColor?: string;
@@ -39,6 +41,7 @@ export const useModalStore = create<ModalState>((set) => ({
   imageThumb: '',
   image1: undefined,
   image2: undefined,
+  image3: undefined,
   video: undefined,
   tapeColor: undefined,
   bgColor: '',
@@ -49,6 +52,7 @@ export const useModalStore = create<ModalState>((set) => ({
       content,      
       image1,
       image2,
+      image3,
       video,
       tapeColor,
       bgColor
@@ -60,6 +64,7 @@ export const useModalStore = create<ModalState>((set) => ({
       content,      
       image1,
       image2,
+      image3,
       video,
       tapeColor,
       bgColor
@@ -72,6 +77,7 @@ export const useModalStore = create<ModalState>((set) => ({
       content: '',      
       image1: undefined,
       image2: undefined,
+      image3: undefined,
       video: undefined,
       tapeColor: undefined,
       bgColor: ''

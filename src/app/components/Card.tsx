@@ -12,6 +12,7 @@ type textInfoProp = {
     imageThumb: string;
     image1?: string;
     image2?: string;
+    image3?: string;
     video?: string;
     tapeColor?: string;
     bgColor?: string;
@@ -19,7 +20,7 @@ type textInfoProp = {
 };
 
 
-export function Card({ title = "title test", subtitle, cardSubtitle, content, imageThumb = "", image1 = "", image2 = "", video = "", tapeColor = "fill-red-300", bgColor, }: textInfoProp) {
+export function Card({ title = "title test", subtitle, cardSubtitle, content, imageThumb = "", image1 = "", image2 = "",image3 = "", video = "", tapeColor = "fill-red-300", bgColor, }: textInfoProp) {
     const openModal = useModalStore((state) => state.openModal);
 
 
@@ -31,13 +32,14 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
             content: content,
             image1: image1,
             image2: image2,
+            image3: image3,
             video: video,
             tapeColor: tapeColor,
             bgColor: bgColor,
 
         })}>
             <div className='flex flex-col justify-center items-start w-full ml-[82px] sm:ml-[140px] md:ml-[182px] lg:ml-[200px]'>
-                <h1 className="font-handlee w-8/12 text-xl md:text-2xl lg:text-5xl text-[#ba7bd3]">{title}</h1>
+                <h1 className="font-nunito font-semibold w-8/12 text-xl md:text-2xl lg:text-3xl text-[#ba7bd3]">{title}</h1>
                 <p className='w-9/12 text-pink-950  '>{subtitle}</p>
             </div>
 
@@ -48,8 +50,8 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
                 width="190" height="132" viewBox="0 0 190 132" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5 0L189.548 98.1773L167.167 101.421L170.048 131.952L0 33.775L20.0677 28.6179L19.5 0Z" />
             </svg>
-            <div className="absolute left-[-52px] w-28 lg:w-44 sm:w-36 h-72 lg:h-72 sm:h-36 ml-3  animate-pulse select-none">
-                <Image
+            <div className="absolute left-[-32px] w-20  lg:w-48 h-20  lg:h-32  ml-5 animate-pulse select-none">
+                <Image                
                     src={imageThumb}
                     alt={title}
                     layout="fill" // Faz a imagem preencher o contêiner

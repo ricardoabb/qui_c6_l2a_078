@@ -18,7 +18,7 @@ const config: Config = {
         'solid-up': '0px -8px 0 0 #83abdc',
       },
       fontFamily: {
-        handlee: 'var(--font-handlee)',
+        handlee: 'var(--font-nunito)',
         nunito: 'var(--font-nunito)',
         montserrat: 'var(--font-montserrat)'
       },

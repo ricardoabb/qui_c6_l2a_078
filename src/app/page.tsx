@@ -43,7 +43,7 @@ export default function Home() {
 
       <section id="cards" className={`flex flex-col pl-9 pr-4 gap-24 } `}>
         {card.map(item => {
-          return <Card key={item.id} title={item.title} subtitle={item.subtitle} cardSubtitle={item.cardSubtitle} content={item.content} tapeColor={item.tapeColor} bgColor={item.bgColor} imageThumb={item.imageThumb} image1={item.image1} image2={item.image2} video={item.video} />
+          return <Card key={item.id} title={item.title} subtitle={item.subtitle} cardSubtitle={item.cardSubtitle} content={item.content} tapeColor={item.tapeColor} bgColor={item.bgColor} imageThumb={item.imageThumb} image1={item.image1} image2={item.image2} image3={item.image3} video={item.video} />
         })}
 
       </section>

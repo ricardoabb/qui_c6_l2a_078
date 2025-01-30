@@ -3,15 +3,10 @@ import { Handlee, Nunito, Montserrat } from "next/font/google";
 import "./globals.css";
 
 
-const montserrat = Montserrat({
-  subsets: ['latin', ],
-  variable: '--font-montserrat',
-  weight: '400',
-});
 
 const handlee = Handlee({
   subsets: ['latin'],
-  variable: '--font-handlee',
+  variable: '--font-nunito',
   weight: '400',
 });
 

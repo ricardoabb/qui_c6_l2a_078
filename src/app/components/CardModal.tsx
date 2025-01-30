@@ -18,7 +18,7 @@ import doc from '../assets/doc.png';
 
 
 export function CardModal() {
-  const { isOpen, title, subtitle, cardSubtitle, content, image1, image2, video, tapeColor, bgColor, closeModal } = useModalStore();
+  const { isOpen, title, subtitle, cardSubtitle, content, image1, image2,image3, video, tapeColor, bgColor, closeModal } = useModalStore();
   if (!isOpen) return null;
   console.log('subtitle: ', subtitle);
 
@@ -161,6 +161,19 @@ export function CardModal() {
                         <div className="left-[-10px] -bottom-20 w-64 lg:w-56 h-64 lg:h-64 sm:h-36 ml-3 select-none">
                           <Image
                             src={image2!}
+                            alt={''}
+                            layout="fill" // Faz a imagem preencher o contêiner
+                            objectFit="contain" // Ajusta a imagem para cobrir o contêiner                          
+                          />
+                        </div>
+                      </SwiperSlide>
+                    )}
+                    {image3 && (
+
+                      <SwiperSlide>
+                        <div className="left-[-10px] -bottom-20 w-64 lg:w-56 h-64 lg:h-64 sm:h-36 ml-3 select-none">
+                          <Image
+                            src={image3!}
                             alt={''}
                             layout="fill" // Faz a imagem preencher o contêiner
                             objectFit="contain" // Ajusta a imagem para cobrir o contêiner                          

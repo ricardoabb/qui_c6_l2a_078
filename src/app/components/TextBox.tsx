@@ -38,7 +38,7 @@ export function TextBox({ content = "", title = "", subtitle, cardSubtitle, hide
 
             <div id="title" className={`flex items-center justify-center gap-2 border-sand-500  ${hide ? "hidden" : "block"} `}>
                 <div id="text">
-                    <h1 className={`font-handlee ${isOpen ? 'text-[#ba7bd3]' : "text-[#ba7bd3]"}  text-[1.769rem] md:text-[2.1rem] mb-2 md:mb-2 leading-9 md:leading-10`}>{title}</h1>
+                    <h1 className={`font-nunito font-semibold ${isOpen ? 'text-[#ba7bd3]' : "text-[#ba7bd3]"}  text-[1.769rem] md:text-[2.1rem] mb-2 md:mb-2 leading-9 md:leading-10`}>{title}</h1>
                     {
                         isOpen ? <p className="mb-5 card-subtitle">{cardSubtitle}</p> : <p className="mb-5">{subtitle}</p>
                     }
