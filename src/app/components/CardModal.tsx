@@ -39,7 +39,7 @@ export function CardModal() {
             animate={{ scale: 1 }}
             exit={{ scale: 0.8 }}
           >
-            <div className="relative w-full md:w-auto -mt-8 md:-mt-0">
+            <div className="relative w-full md:w-auto mt-0 md:-mt-0">
               <button onClick={closeModal} className="absolute top-[-100px] md:top-[5px] right-0 md:-right-[-10px] bg-white shadow-md rounded-full p-6 z-50">
                 <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M32.0156 34.2656H23.7188L15.75 21.3047L7.78125 34.2656H0L11.3672 16.5938L0.726562 0H8.74219L16.125 12.3281L23.3672 0H31.1953L20.4375 16.9922L32.0156 34.2656Z" fill="#410F33" />
