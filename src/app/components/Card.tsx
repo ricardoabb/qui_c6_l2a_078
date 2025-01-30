@@ -25,7 +25,7 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
 
 
     return (
-        <div className={`group relative bg-[#fff] mx-auto  flex justify-center items-center py-9 rounded-3xl w-full md:w-10/12 shadow-solid cursor-pointer`} onClick={() => openModal({
+        <div className={`group relative bg-[#fff] mx-auto  flex justify-center items-center py-9 rounded-3xl w-full md:w-8/12 shadow-solid cursor-pointer`} onClick={() => openModal({
             title: title,
             subtitle: subtitle,
             cardSubtitle: cardSubtitle,
@@ -50,7 +50,7 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
                 width="190" height="132" viewBox="0 0 190 132" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M19.5 0L189.548 98.1773L167.167 101.421L170.048 131.952L0 33.775L20.0677 28.6179L19.5 0Z" />
             </svg>
-            <div className="absolute left-[-32px] w-20  lg:w-48 h-20  lg:h-32  ml-5 animate-pulse select-none">
+            <div className="absolute left-[-32px] w-20  md:w-48 h-20  md:h-32  ml-5 animate-pulse select-none">
                 <Image                
                     src={imageThumb}
                     alt={title}
