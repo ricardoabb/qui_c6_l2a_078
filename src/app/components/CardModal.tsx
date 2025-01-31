@@ -134,7 +134,7 @@ export function CardModal() {
 
                 </div>
                 <TextBox title={title} cardSubtitle={cardSubtitle} content={content} bgColor='bg-[#fff]' hide={false} />
-                <div className='absolute flex left-0 -bottom-[200px] md:-bottom-[180px]  w-full'>
+                <div className='absolute flex left-0 -bottom-[215px] md:-bottom-[180px]  w-full'>
                   <Swiper
                     modules={[Navigation]}
                     spaceBetween={50}
