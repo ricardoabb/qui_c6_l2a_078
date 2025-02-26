@@ -4,8 +4,7 @@
 
 :root {
   background-color: white;
-  --swiper-navigation-color: #410F33;
-
+  --swiper-navigation-color: #410f33;
 }
 
 .swiper-button-prev:after,
@@ -14,8 +13,6 @@
   font-weight: 700;
   margin-bottom: 16px;
 }
-
-
 
 @layer utilities {
   .bg-notebook {
@@ -35,7 +32,10 @@
   }
 }
 
-html, body { @apply no-scrollbar }
+html,
+body {
+  @apply no-scrollbar;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -56,4 +56,9 @@ img {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+p {
+hifen-wrap: auto;
+hifen: auto;
 }

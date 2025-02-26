@@ -33,7 +33,7 @@ export const card = [
     {
         id: 2,
         title: "METAIS NOBRES",
-        subtitle: "Ouro, platina, paládio, ródio, entre outros, são usados em reações de hidrogenação e oxidação. Devido ao custo elevado, o uso é otimizado para processos específicos nos quais são indispensáveis.",
+        subtitle: "Ouro, platina, paládio, ródio, entre outros são usados em reações de hidrogenação e oxidação. Devido ao custo elevado, o uso é otimizado para processos específicos nos quais são indispensáveis.",
         cardSubtitle:"QUAL É A FUNÇÃO DOS METAIS NOBRES NOS CATALISADORES AUTOMOTIVOS?",
         content: "Os catalisadores automotivos desempenham um papel extremamente importante na redução das emissões de gases poluentes provenientes dos veículos. São componentes essenciais dos sistemas de escape automotivos, responsáveis por converter os gases poluentes resultantes da combustão em substâncias menos prejudiciais ao meio ambiente.\nMetais valiosos como paládio, platina e ródio são frequentemente encontrados nos catalisadores automotivos. Esses metais desempenham um papel fundamental na catalisação das reações químicas que ocorrem dentro do catalisador, convertendo os gases provenientes da combustão em substâncias menos prejudiciais, como a conversão de CO em CO2.",
         imageThumb: "/Red_QUIM2_IM_012-gold.png",

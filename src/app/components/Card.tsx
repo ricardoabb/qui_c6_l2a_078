@@ -40,7 +40,7 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
         })}>
             <div className='flex flex-col justify-center items-start w-full ml-[82px] sm:ml-[140px] md:ml-[182px] lg:ml-[200px]'>
                 <h1 className="font-nunito font-semibold w-8/12 text-xl md:text-2xl lg:text-3xl text-[#ba7bd3]">{title}</h1>
-                <p className='w-9/12 text-pink-950  '>{subtitle}</p>
+                <p className='w-10/12 text-pink-950 hyphens-none '>{subtitle}</p>
             </div>
 
 
