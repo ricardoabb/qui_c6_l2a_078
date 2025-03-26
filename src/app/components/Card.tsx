@@ -24,6 +24,43 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
     const openModal = useModalStore((state) => state.openModal);
 
 
+    function TextWithHighlights({ text }: { text?: string }): JSX.Element {
+        const boldWords: string[] = [];
+        const nowrapWords: string[] = ['Haber-Bosch', 'Fischer-Tropsch']; // Adicione palavras que devem manter hífen
+        
+        // Usar string vazia como fallback se `text` for undefined
+        const safeText = text || '';
+    
+        // Criar regex para capturar palavras de ambos os arrays
+        const regex = new RegExp(
+          `(${[...boldWords, ...nowrapWords].join('|')}|\\b\\w+-\\w+\\b)`, 
+          'gi'
+        );
+    
+        const highlightedText = safeText.split(regex).map((part, index) => {
+          if (boldWords.includes(part)) {
+            return (
+              <strong key={index} className="whitespace-nowrap">
+                {part}
+              </strong>
+            );
+          }
+    
+          if (nowrapWords.includes(part) || part.includes('-')) {
+            return (
+              <span key={index} className="whitespace-nowrap">
+                {part}
+              </span>
+            );
+          }
+    
+          return part;
+        });
+    
+        return <p className="text-[1.1rem] whitespace-pre-wrap select-none">{highlightedText}</p>;
+      }
+    
+
     return (
         <div className={`group relative bg-[#fff] mx-auto  flex justify-center items-center py-9 rounded-3xl w-full md:w-8/12 shadow-solid cursor-pointer`} onClick={() => openModal({
             title: title,
@@ -40,7 +77,7 @@ export function Card({ title = "title test", subtitle, cardSubtitle, content, im
         })}>
             <div className='flex flex-col justify-center items-start w-full ml-[82px] sm:ml-[140px] md:ml-[182px] lg:ml-[200px]'>
                 <h1 className="font-nunito font-semibold w-8/12 text-xl md:text-2xl lg:text-3xl text-[#ba7bd3]">{title}</h1>
-                <p className='w-10/12 text-pink-950 hyphens-none '>{subtitle}</p>
+                <p className='w-10/12 text-pink-950 hyphens-none '>{TextWithHighlights({ text: subtitle })}</p>
             </div>
 
 
